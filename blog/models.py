@@ -16,3 +16,21 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+        
+# Create your models here.
+
+class Memo(models.Model):
+    title = models.CharField(verbose_name='タイトル', max_length=100)
+    text = models.TextField(verbose_name='内容')
+    created_date = models.DateTimeField(verbose_name='作成日', auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+        
+class Todo(models.Model): 
+    todo = models.CharField('ToDo', max_length=100, blank=False)
+    created_at = models.DateTimeField('作成日時', auto_now_add=True)
+    updated_at = models.DateTimeField('更新日時',auto_now=True)
+
+    def __str__(self):
+        return self.todo
