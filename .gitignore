@@ -6,3 +6,5 @@ flock
 db.sqlite3
 /static
 .DS_Store
+blog/migrations/0002_memo.py
+blog/migrations/0003_todo.py 
