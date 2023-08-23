@@ -62,10 +62,6 @@ python -m pip install --upgrade pip
 ```
 pip install -r requirements.txt
 ```  
-'requirements.txt'には以下のテキストがあります。  
-```
-Django~=3.2.10
-```  
 ・'pip install -r requirements.txt'を実行することによって、Djangoをインストールできます。  
 
 #### 4.サーバーへアクセス  
