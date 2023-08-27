@@ -4,25 +4,27 @@
 ***  
 
 #### アプリにアクセスするまでの工程  
-1.gitbashのインストール
+1.gitbashのインストール  
 2.pythonのインストール  
 3.仮想環境の起動  
 4.Djangoのインストール  
 5.サーバーへアクセス  
 ***
 
-#### 1.gitbashのインストール  
+#### 1.git bashのインストール  
 
-まずこのリポジトリからデータをダウンロードするにあたってgit bashが必要になります。
+まずこのリポジトリからデータをダウンロードするにあたってgit bashが必要になります。  
 以下のURLからOSに合ったgitbashをインストールしてください。  
+（今後の操作はgit bashで行います。） ※Windowsの方は注意してください。 
 https://gitforwindows.org/  
 
-次に適当なところにフォルダを作成し、データをダウロードしてください。
+次に適当なところにフォルダを作成し、データをダウロードしてください。  
 方法はいくつかありますが、その一つとして以下のコードを実行してください。  
 ```
 git clone url
-```
+```  
 ※urlはこのリポジトリのコードからURLをコピーして使用してください。  
+***  
 
 #### 2.pythonのインストール  
 
@@ -30,15 +32,11 @@ git clone url
 ##### Windowsの場合  
 https://www.python.org/downloads/windows/  
 ※自身のWindowsが32-bitか64-bitなのか確認してから該当するデータをダウンロードしてください。  
-追記：必要に応じてMicrosoft　storeからpythonのアプリをダウンロードしてください。
+追記：必要に応じてMicrosoft　storeからpythonのアプリをダウンロードしてください。  
 
 ##### Mac OSの場合  
 https://www.python.org/downloads/release/python-361/  
 ※Mac OS X 64-bit/32-bit installer というファイルをダウンロードします。  
-ダウンロードできたら python-3.6.1-macosx10.6.pkg をダブルクリックして実行します。
-
-##### *コマンドウィンドウについて*
-
 ***
 
 #### 3.仮想環境の起動  
@@ -51,21 +49,16 @@ Djangoのインストールの前に仮想環境(virtual environment)の作成�
 python -m venv myvenv
 ```  
 'myvenv'は自身の好きな文字列で良いです。  
-※特に何も起こりませんが大丈夫です。
+※特に何も起こりませんが大丈夫です。  
 
 ・続いて起動に移ります。  
 
-OSによって違うので、該当するコードを実行してください。  
-##### Windowsの場合  
-```
-myvenv\Scripts\activate
-```
-##### Mac OSの場合
+##### git bash 及びMac OSの場合の操作は
 ```
 source myvenv/bin/activate
 ```
 コンソールでプロンプトの行頭に (myvenv) が付いたら、仮想環境(virtualenv) を起動しています。  
-
+***
 #### 4.Djangoのインストール  
 仮想環境が起動されたので、Djangoをインストールしてみましょう。  
 
@@ -80,13 +73,20 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```  
 ・'pip install -r requirements.txt'を実行することによって、Djangoをインストールできます。  
-
+***
 #### 5.サーバーへアクセス  
 
-以下のコードを実行しアクセスしてください。  
+サーバーへアクセスする前にデータをmigrate（適用させる）必要があります。  
+以下のコードを実行してください。  
+```
+python manage.py migrate
+```
+※色んな表示が出ますが基本はokと表示されるはずなので、大丈夫です。  
+
+最後に以下のコードを実行しアクセスしてください。  
 
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
-実行したら、URLが表示されるのでそれをクリックしてください。  
+実行したら、URLが表示されるのでそれをクリックしてください。    
 
