@@ -88,5 +88,5 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-実行したら、URLが表示されるのでそれをクリックしてください。    
+実行したら、URLが表示されるのでそれをコピーしてブラウザ等でペーストしてください。    
 
