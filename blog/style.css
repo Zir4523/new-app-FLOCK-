@@ -1,52 +1,53 @@
-header {
-  display: flex;
-  width: 100%;
-  height: 70px;
-  background-color: #a9a9a9; /* 色はdarkgray */
-  align-items: center;
-}
- 
-.title {
-  margin-right: auto;
-  font-family: "Times New Roman"; /* フォントを変更 */
-  color: #00ffff; /* 色はcyan */
-}
- 
-.menu-item {
-  list-style: none;
-  display: inline-block;
-  font-family: "Times New Roman"; /* フォントを変更 */
-  padding: 10px;
-}
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-.main {
-  list-style: none;
-  display: inline-block;
-  background-color: #a9a9a9; /* 色はdarkgray */
-  font-family: "Times New Roman"; /* フォントを変更 */
-  padding: 10px;
-}
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            background-color: #a9a9a9;
+        }
 
-.content-1 {
-  list-style: none;
-  display: inline-block;
-  background-color: #696969; /* 色はdimgray */
-  font-family: "Times New Roman"; /* フォントを変更 */
-  padding: 10px;
-}
+        .menu-group {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.content-2 {
-  list-style: none;
-  display: inline-block;
-  background-color: #696969; /* 色はdimgray */
-  font-family: "Times New Roman"; /* フォントを変更 */
-  padding: 30px;
-}
+        .menu-item {
+            font-family: "Times New Roman";
+            padding: 10px;
+        }
 
-.content-3 {
-  list-style: none;
-  display: inline-block;
-  background-color: #696969; /* 色はdimgray */
-  font-family: "Times New Roman"; /* フォントを変更 */
-  padding: 30px;
-}
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: #a9a9a9;
+            font-family: "Times New Roman";
+        }
+
+        .main {
+            /* position: absolute; この行を削除 */
+            top: 70px; /* ヘッダーの下に配置 */
+            display: flex;
+        }
+
+        .main-2 {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .flex-content {
+            border: 1.5px solid #aaa;
+            border-radius: 2px;
+            background-color: #a9a9a9;
+            margin: 5px;
+            padding: 5px;
+        }

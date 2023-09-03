@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>
-        FLOCK</title>
-    <meta charset="utf-8"><!-- 文字化け防止の記述 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 「IE（Internet Explorer）なら最新環境で表示してね」と言う意味の記載。インストール済みの最新 IE で表示。「Edge ブラウザで表示して」という意味でない -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- ページを様々な画面幅のデバイスでの表示に適応させるための記述 -->
-    <link rel="stylesheet" href="style.css"><!-- rel=ファイルとの関係性、href=ファイルの場所 -->
+    <title>FLOCK</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:#696969;"><!-- 全体の色はdimgray -->
-    <header>
+<body style="background-color:#696969;">
+    <div class="header">
         <h1 class="title">Flock</h1>
-        <nav class="nav"><!-- 主要なナビゲーション -->
-            <ui class="menu-group">
-                <li class="menu-item"><a hret="#">My Page</a></li><!-- 自身のユーザ情報が表示される予定 -->
-                <li class="menu-item"><a hret="#">information</a></li><!--　各種情報が表示される予定 -->
-                <li class="menu-item"><a hret="#">setting</a></li><!-- 設定画面に飛ぶ予定 -->
-            </ui>
-        </nav>
-    </header>
-    
-    <div class="main">
         <nav class="nav">
-            <ui class="menu-group">
-               <div class="sideber">home</div><!-- ホーム画面に戻る -->
-　　           <div class="sideber">mail</div><!-- DMを見ることが出来る予定 -->
-　　           <div class="sideber">Teams</div><!-- 自身の参加しているチームの情報が見れる予定 -->
-　　           <div class="sideber">memo</div><!-- 自身が記載したメモリストが見れる画面に飛べる予定 -->
-　　        </ui>
-　　    </nav>
-　　
-　　  <div class="content-1">
-　　        <div class="flex-content-1">ユーザー名</div><!-- 自身のユーザー名が表示される予定 -->
-　　        <div class="flex-content-2">投稿画面</div><!-- TLに自身の発言を記載できる -->
-　　        <div class="flex-content-3">ToDo記入</div><!-- ToDoリストに追加する内容を作成 -->
-　　        <div class="flex-content-4">memo記入</div><!-- メモリストに保存されるメモを作成出来る予定 -->
-　　  </div>
-　　  <div class="content-2">
-　　        <div class="flex-content-5">タイムライン</div><!-- 自身と他者の投稿が見れる予定 -->
-　　  </div>
-　　  <div class="content-3">
-　　        <div class="flex-content-6">ToDoリスト</div><!-- 自身の作成したToDoのタイトルが見える予定 -->
-　    </div>
+            <ul class="menu-group">
+                <li class="menu-item"><a href="#">My Page</a></li>
+                <li class="menu-item"><a href="#">Information</a></li>
+                <li class="menu-item"><a href="#">Setting</a></li>
+            </ul>
+        </nav>
     </div>
+<article>
+
+
+    
+    <div class="sidebar">
+        <nav class="nav">
+            <ul class="menu-group">
+               <li class="sidebar">home</li>
+               <li class="sidebar">mail</li>
+               <li class="sidebar">Teams</li>
+               <li class="sidebar">memo</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="main-2">
+            <div class="flex-content">ユーザー名</div>
+            <div class="flex-content">投稿画面</div>
+            <div class="flex-content">ToDo記入</div>
+            <div class="flex-content">memo記入</div>
+        </div>
+        <div class="main-2">タイムライン</div>
+        <div class="main-2">ToDoリスト</div>
+    </div>
+</article>
 </body>
 </html>
