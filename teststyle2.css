@@ -1,0 +1,59 @@
+body {
+    font-family:'Noto Sans JP',sans-serif;
+    background-color:#696969;
+    height: 100vh;
+ }
+ 
+ header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: #696969;
+  align-items: center;
+}
+
+.title {
+  margin-right: auto;
+}
+ 
+.menu-item {
+  list-style: none;/*ulの点が消える*/
+  display: inline-block;/**/
+  padding: 10px;/*コンテンツと境界との間の領域*/
+}
+
+article {
+  display:flex;
+  height: 100%;
+}
+
+ .side {
+   background-color:#696969;
+   width: 100px;
+   height:100%;
+   text-align:center;
+ } 
+
+ .sidebar {
+  list-style: none;/*ulの点が消える*/
+  display: inline-block;/**/
+  text-align: left;
+  padding: 10px;
+ }
+ 
+ .main {
+  background-color: #a9a9a9;
+  width:50%;
+  height:100%;
+  text-align:center;
+  margin: 0;
+ }
+
+ .content {
+   background-color:#b3d874;
+   width:40%;
+   height:25%;
+   text-align:center;
+   margin-left:10px;
+ }
+ 

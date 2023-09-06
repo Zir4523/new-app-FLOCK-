@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>FLOCK</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="teststyle2.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Flock</h1>
+    <nav class="nav">
+      <ul class="menu-group">
+        <li class="menu-item">My Page</li>
+        <li class="menu-item">Information</li>
+        <li class="menu-item">Setting</li>
+      </ul>
+    </nav>
+  </header>
+    <article>
+      <div class="side">
+        <nav class="nav">
+          <ul class="menu-group-2" style="
+              padding: 0;
+              margin: 0;"
+          >
+            <div class="sidebar">home</div>
+            <div class="sidebar">mail</div>
+            <div class="sidebar">Teams</div>
+            <div class="sidebar">memo</div>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+          <div class="content">ユーザー名</div>
+          <div class="content">投稿画面</div>
+          <div class="content">ToDo記入</div>
+           <form method="post">
+             {{ form }} 
+             <button type="submit">送信</button>
+           </form>
+          <div class="content">memo記入</div>
+      </div>
+      <div class="main">
+        <p>タイムライン</p>
+      </div>
+      <div class="main">
+        <p>ToDoリスト</p>
+      </div>
+    </article>
+</body>
+</html>
