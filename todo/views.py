@@ -1,11 +1,7 @@
-from django.shortcuts import render
 from django.views import generic
 from django.urls import reverse_lazy
 from .models import Todo
 from .forms import TodoForm
-
-def top_page(request):
-    return render(request, 'blog/base.html', {})
 
 # ToDoの一覧表示機能
 class TodoListView(generic.ListView):

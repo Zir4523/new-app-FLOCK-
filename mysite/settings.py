@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=xvkm4d9f*0wsnpw3mv+j(&v)+9d+dmskanm9_#qj-*!z$*i)u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','.amazonaws.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','.amazonaws.com','*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'todo.apps.TodoConfig', #todoアプリケーションの組み込み
 ]
 
 MIDDLEWARE = [
